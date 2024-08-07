@@ -4,7 +4,7 @@ import commentsRoutes from './comments.routes.js'
 
 const router = Router()
 
-router.use('/auth', authRoutes)
-router.use('/comments', commentsRoutes)
+router.use('/', authRoutes)
+router.use('/', commentsRoutes)
 
 export default router
