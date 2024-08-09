@@ -4,11 +4,12 @@ import cookieParser from 'cookie-parser'
 import cors from 'cors'
 
 import routes from './routes/index.js'
+import { FRONTEND_URL } from './config/index.js'
 
 const app = express()
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: FRONTEND_URL,
   credentials: true
 }))
 app.use(morgan('dev'))
